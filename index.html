@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Privacy Policy | GetzyForex</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- Fonts & Tailwind -->
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!-- Lottie Player CDN -->
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <style>
+    body { font-family: 'Inter',sans-serif; transition: background 0.3s, color 0.3s; }
+    .heading { font-family: 'Fredoka','Montserrat',sans-serif; }
+    .glass { background: rgba(255,255,255,0.97); backdrop-filter: blur(15px); border-radius: 2.5rem; box-shadow: 0 12px 36px 0 #2563eb15; border: 1.5px solid #e5e7eb; position: relative; transition: background 0.3s, color 0.3s;}
+    .section-divider { border: none; border-top: 2px dashed #d1d5db; margin: 2.5rem 0;}
+    .cartoon-icon { width: 2.7rem; height: 2.7rem; min-width: 2.7rem; margin-right: 1rem; display: flex; align-items: center; justify-content: center; border-radius: 1.7rem; background: #fff; box-shadow: 0 7px 18px #2563eb12; padding: 0.18rem; transition: background 0.3s;}
+    .cartoon-mascot-anim { width: 140px; max-width:90vw; margin:0 auto 0.5rem auto; display:block; border-radius: 1.2rem; background: linear-gradient(120deg, #fbbf2412 50%, #2563eb08 100%); box-shadow: 0 6px 32px #2563eb15; transition: background 0.3s;}
+    .video-bg {
+      position:absolute; left:0;top:0;width:100vw;height:100%;object-fit:cover;z-index:0;opacity:0.18;
+      pointer-events:none;
+    }
+    .hero-overlay {position:relative;z-index:1;}
+    .theme-btn { border-radius: 9999px; padding: 0.5rem 1.1rem; font-family: 'Fredoka',sans-serif; font-weight: bold; font-size: 1rem; margin-right: 0.5rem; background: linear-gradient(90deg,#fbbf24 50%,#2563eb 100%); color: #fff; box-shadow: 0 2px 10px #2563eb22; border: none; transition: background 0.2s, color 0.2s; cursor: pointer;}
+    .theme-light { background: linear-gradient(120deg, #f3f8ff 0%, #e0e7ff 100%) !important; color: #263453;}
+    .theme-dark { background: linear-gradient(120deg, #23283a 0%, #191c24 100%) !important; color: #f1f1f1;}
+    .theme-solarized { background: linear-gradient(120deg, #fdf6e3 0%, #eee8d5 100%) !important; color: #586e75;}
+    .glass.theme-dark {background: rgba(24,28,38,0.95); border-color: #38405a; color: #f1f1f1;}
+    .glass.theme-solarized {background: rgba(253,246,227,0.94); border-color: #b58900; color: #586e75;}
+    .footer-dark { color: #c5c5c5;}
+    .footer-solar { color: #b58900;}
+    @media (max-width: 990px) {.sidebar-sticky { display: none;}}
+  </style>
+</head>
+<body class="theme-light" id="mainbody">
+  <!-- Theme bar -->
+  <div class="w-full flex flex-wrap justify-end items-center px-3 pt-3 max-w-7xl mx-auto gap-2">
+    <button class="theme-btn" id="themeBtn">🌙 Theme</button>
+  </div>
+  <!-- Hero & Mascot with Video/Lottie BG -->
+  <div class="relative pb-2 pt-8 md:pt-12 md:pb-8 overflow-hidden" style="min-height:320px;">
+    <video class="video-bg" autoplay loop muted playsinline poster="https://assets10.lottiefiles.com/packages/lf20_kyu7xb1v.json">
+      <source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4">
+    </video>
+    <div class="max-w-4xl mx-auto text-center px-4 flex flex-col items-center hero-overlay">
+      <lottie-player
+        src="https://assets5.lottiefiles.com/packages/lf20_kyu7xb1v.json"
+        background="transparent"
+        speed="1"
+        style="width: 160px; height: 160px;"
+        loop
+        autoplay
+        class="cartoon-mascot-anim"
+        id="mascotHeroAnim"
+        title="Animated Mascot"
+      ></lottie-player>
+      <h1 class="text-4xl md:text-5xl heading font-extrabold text-blue-700 tracking-tight mt-2 mb-1">Privacy Policy</h1>
+      <p class="text-lg md:text-xl text-blue-900 font-medium mb-1">Your privacy is our absolute priority.</p>
+      <p class="text-sm text-blue-500 mb-2">Last updated: June, 2025</p>
+    </div>
+  </div>
+  <div class="max-w-7xl mx-auto px-2 sm:px-8 flex flex-col md:flex-row gap-8">
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar-sticky hidden md:block w-64 mt-2" id="sidebarNav">
+      <div class="glass p-4" id="sidebarGlass">
+        <div class="text-xs uppercase tracking-wide mb-2 text-blue-500 font-semibold">Sections</div>
+        <ul class="space-y-1">
+          <li><a href="#intro"      class="sidebar-link block rounded-lg px-3 py-2">Introduction</a></li>
+          <li><a href="#collect"    class="sidebar-link block rounded-lg px-3 py-2">Information We Collect</a></li>
+          <li><a href="#use"        class="sidebar-link block rounded-lg px-3 py-2">How We Use Data</a></li>
+          <li><a href="#security"   class="sidebar-link block rounded-lg px-3 py-2">Security</a></li>
+          <li><a href="#sharing"    class="sidebar-link block rounded-lg px-3 py-2">Sharing</a></li>
+          <li><a href="#rights"     class="sidebar-link block rounded-lg px-3 py-2">Your Rights</a></li>
+          <li><a href="#cookies"    class="sidebar-link block rounded-lg px-3 py-2">Cookies</a></li>
+          <li><a href="#contact"    class="sidebar-link block rounded-lg px-3 py-2">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Main Card -->
+    <main class="flex-1 min-w-0">
+      <div class="glass p-6 md:p-12" id="mainGlass">
+        <!-- Section: Intro with Lottie -->
+        <section id="intro" class="mb-8 flex items-center scroll-mt-20">
+          <span class="cartoon-icon">
+            <lottie-player id="introLottie" src="https://assets4.lottiefiles.com/private_files/lf30_jtkhztgp.json" background="transparent" speed="1.1" style="width:44px;height:44px;" loop autoplay></lottie-player>
+          </span>
+          <div>
+            <h2 class="text-2xl heading font-bold text-blue-800 mb-1">Your privacy, our mission.</h2>
+            <p class="text-gray-700 text-lg">At GetzyForex, privacy and data protection are at the heart of everything we do. This policy describes, in detail, our practices and your rights.</p>
+          </div>
+        </section>
+        <hr class="section-divider" id="divider1">
+        <!-- Section: What We Collect -->
+        <section id="collect" class="mb-8 scroll-mt-20">
+          <div class="flex items-center mb-2">
+            <span class="cartoon-icon">
+              <lottie-player id="collectLottie" src="https://assets1.lottiefiles.com/private_files/lf30_oz9xk4zw.json" background="transparent" speed="1" style="width:36px;height:36px;" loop autoplay></lottie-player>
+            </span>
+            <h2 class="text-xl heading font-semibold text-gray-800">Information We Collect</h2>
+          </div>
+          <div class="grid md:grid-cols-2 gap-6 mt-3">
+            <div>
+              <h3 class="font-semibold text-gray-700 mb-1">Personal Data</h3>
+              <ul class="list-disc list-inside text-gray-600 mb-3">
+                <li>Name, email address, and identifiers for registration</li>
+                <li>Profile data from integrated platforms</li>
+                <li>Payment and subscription details <span class="inline-block align-middle"><lottie-player src="https://assets2.lottiefiles.com/packages/lf20_3rwasyjy.json" background="transparent" speed="1.2" style="width:28px;height:28px;display:inline" loop autoplay></lottie-player></span></li>
+                <li>Communication preferences</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="font-semibold text-gray-700 mb-1">Usage Data</h3>
+              <ul class="list-disc list-inside text-gray-600">
+                <li>Platform interactions and viewed content</li>
+                <li>Device, browser, and session analytics</li>
+                <li>Learning pathway and trading activity</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <hr class="section-divider" id="divider2">
+        <!-- Section: How We Use -->
+        <section id="use" class="mb-8 scroll-mt-20">
+          <div class="flex items-center mb-2">
+            <span class="cartoon-icon">
+              <lottie-player id="useLottie" src="https://assets4.lottiefiles.com/packages/lf20_3rwasyjy.json" background="transparent" speed="1" style="width:36px;height:36px;" loop autoplay></lottie-player>
+            </span>
+            <h2 class="text-xl heading font-semibold text-gray-800">How We Use Your Data</h2>
+          </div>
+          <ul class="list-disc list-inside ml-4 text-gray-700">
+            <li>To deliver and personalize our trading and learning solutions</li>
+            <li>To process payments securely and manage your subscriptions</li>
+            <li>To communicate platform updates and security alerts</li>
+            <li>To analyze and improve user experience and product features</li>
+            <li>To comply with all legal and regulatory obligations</li>
+          </ul>
+        </section>
+        <hr class="section-divider" id="divider3">
+        <!-- Section: Security -->
+        <section id="security" class="mb-8 scroll-mt-20">
+          <div class="flex items-center mb-2">
+            <span class="cartoon-icon">
+              <lottie-player id="securityLottie" src="https://assets6.lottiefiles.com/packages/lf20_xlkxtmul.json" background="transparent" speed="1" style="width:36px;height:36px;" loop autoplay></lottie-player>
+            </span>
+            <h2 class="text-xl heading font-semibold text-gray-800">Data Security</h2>
+          </div>
+          <ul class="list-disc list-inside ml-4 text-gray-700">
+            <li>Military-grade encryption (AES-256) for data at rest and in transit</li>
+            <li>Strict access controls and continuous monitoring</li>
+            <li>Regular third-party security audits and penetration testing</li>
+          </ul>
+        </section>
+        <hr class="section-divider" id="divider4">
+        <!-- Section: Sharing -->
+        <section id="sharing" class="mb-8 scroll-mt-20">
+          <div class="flex items-center mb-2">
+            <span class="cartoon-icon">
+              <lottie-player id="sharingLottie" src="https://assets10.lottiefiles.com/private_files/lf30_6q5ltazf.json" background="transparent" speed="1" style="width:36px;height:36px;" loop autoplay></lottie-player>
+            </span>
+            <h2 class="text-xl heading font-semibold text-gray-800">Information Sharing</h2>
+          </div>
+          <p class="mb-2 text-gray-700">We never sell your data. We only disclose your information when:</p>
+          <ul class="list-disc list-inside ml-4 text-gray-700">
+            <li>You provide explicit consent</li>
+            <li>It is required by law or regulation</li>
+            <li>Service providers assist in delivering our services (always under strict agreements)</li>
+          </ul>
+        </section>
+        <hr class="section-divider" id="divider5">
+        <!-- Section: Your Rights -->
+        <section id="rights" class="mb-8 scroll-mt-20">
+          <div class="flex items-center mb-2">
+            <span class="cartoon-icon">
+              <lottie-player id="rightsLottie" src="https://assets7.lottiefiles.com/packages/lf20_0g2v7j1c.json" background="transparent" speed="1" style="width:36px;height:36px;" loop autoplay></lottie-player>
+            </span>
+            <h2 class="text-xl heading font-semibold text-gray-800">Your Rights</h2>
+          </div>
+          <ul class="list-disc list-inside ml-4 text-gray-700">
+            <li>Request access to your data at any time</li>
+            <li>Correct or update inaccurate information</li>
+            <li>Request deletion (“right to be forgotten”)</li>
+            <li>Export your data in a portable format</li>
+            <li>Opt out of marketing communications</li>
+          </ul>
+        </section>
+        <hr class="section-divider" id="divider6">
+        <!-- Section: Cookies -->
+        <section id="cookies" class="mb-8 scroll-mt-20">
+          <h2 class="flex items-center text-xl heading font-semibold text-yellow-700 mb-3">
+            <span class="cartoon-icon mr-2">
+              <lottie-player id="cookiesLottie" src="https://assets10.lottiefiles.com/packages/lf20_jv4zv9zw.json" background="transparent" speed="1.2" style="width:32px;height:32px;" loop autoplay></lottie-player>
+            </span>
+            Cookies & Tracking
+          </h2>
+          <p class="mb-4 text-gray-800 text-lg font-medium leading-relaxed">
+            We use cookies and similar technologies to keep your experience secure, fast, and personalized.
+          </p>
+          <div class="space-y-3">
+            <details class="group bg-yellow-50 rounded-xl px-4 py-2 transition-all duration-200 shadow-sm border border-yellow-200 hover:border-yellow-400">
+              <summary class="cursor-pointer flex items-center text-yellow-800 font-semibold text-base focus:outline-none">
+                <span class="cartoon-icon mr-2">
+                  <lottie-player id="cookiesEssLottie" src="https://assets8.lottiefiles.com/packages/lf20_pprxh53t.json" background="transparent" speed="1" style="width:26px;height:26px;" loop autoplay></lottie-player>
+                </span>
+                Essential Cookies
+              </summary>
+              <div class="ml-11 mt-2 text-gray-700 text-sm">
+                Necessary for platform security, login, and session management.
+              </div>
+            </details>
+            <details class="group bg-yellow-50 rounded-xl px-4 py-2 transition-all duration-200 shadow-sm border border-yellow-200 hover:border-yellow-400">
+              <summary class="cursor-pointer flex items-center text-yellow-800 font-semibold text-base focus:outline-none">
+                <span class="cartoon-icon mr-2">
+                  <lottie-player id="cookiesAnalyticsLottie" src="https://assets8.lottiefiles.com/packages/lf20_zp3oqzj6.json" background="transparent" speed="1" style="width:26px;height:26px;" loop autoplay></lottie-player>
+                </span>
+                Analytics Cookies
+              </summary>
+              <div class="ml-11 mt-2 text-gray-700 text-sm">
+                Help us improve the platform by analyzing usage trends (fully anonymized).
+              </div>
+            </details>
+            <details class="group bg-yellow-50 rounded-xl px-4 py-2 transition-all duration-200 shadow-sm border border-yellow-200 hover:border-yellow-400">
+              <summary class="cursor-pointer flex items-center text-yellow-800 font-semibold text-base focus:outline-none">
+                <span class="cartoon-icon mr-2">
+                  <lottie-player id="cookiesPrefLottie" src="https://assets1.lottiefiles.com/packages/lf20_g1rpo3zw.json" background="transparent" speed="1" style="width:26px;height:26px;" loop autoplay></lottie-player>
+                </span>
+                Preference Cookies
+              </summary>
+              <div class="ml-11 mt-2 text-gray-700 text-sm">
+                Remember your settings for a seamless experience.
+              </div>
+            </details>
+          </div>
+          <div class="mt-7 flex flex-col items-start">
+            <button class="theme-btn px-8" id="prefsBtn">
+              <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_7wwmbyxq.json" background="transparent" speed="1.2" style="width:22px;height:22px;display:inline;margin-right:8px;vertical-align:middle;" loop autoplay></lottie-player>
+              Manage Cookie Preferences
+            </button>
+            <span class="mt-1 ml-2 text-xs text-gray-500">You are always in control of your privacy choices.</span>
+          </div>
+        </section>
+        <hr class="section-divider" id="divider7">
+        <!-- Section: Contact -->
+        <section id="contact" class="scroll-mt-20">
+          <div class="flex items-center mb-2">
+            <span class="cartoon-icon">
+              <lottie-player id="contactLottie" src="https://assets4.lottiefiles.com/packages/lf20_1pxqjqps.json" background="transparent" speed="1" style="width:34px;height:34px;" loop autoplay></lottie-player>
+            </span>
+            <h2 class="text-xl heading font-semibold text-gray-800">Contact Us</h2>
+          </div>
+          <p class="text-gray-700">Questions about this Privacy Policy?</p>
+          <ul class="mt-2 ml-4 text-gray-700">
+            <li><strong>Email:</strong> <a href="mailto:privacy@getzyforex.com" class="text-blue-700 hover:underline">privacy@getzyforex.com</a></li>
+            <li><strong>Address:</strong> GetzyForex Headquarters, 123 Trading Street, Financial District, New York, NY 10004</li>
+            <li><strong>Phone:</strong> +1 (234) 567-890</li>
+          </ul>
+        </section>
+      </div>
+      <footer class="text-center text-sm text-gray-500 pt-10 pb-6" id="footer">
+        &copy; 2025 GetzyForex. All rights reserved.<br>
+        <span class="text-blue-700 font-semibold text-base heading">Founder: @AnonymousCreations 🇵🇸</span>
+      </footer>
+    </main>
+  </div>
+  <script>
+    // Lottie mascot arrays for each theme (expand as desired)
+    const mascotLotties = [
+      [
+        "https://assets5.lottiefiles.com/packages/lf20_kyu7xb1v.json",
+        "https://assets7.lottiefiles.com/packages/lf20_9wpyhdzo.json",
+        "https://assets4.lottiefiles.com/packages/lf20_4kx2q32n.json"
+      ], // light
+      [
+        "https://assets10.lottiefiles.com/packages/lf20_6q5ltazf.json",
+        "https://assets6.lottiefiles.com/packages/lf20_xlkxtmul.json",
+        "https://assets8.lottiefiles.com/packages/lf20_tll0j4bb.json"
+      ], // dark
+      [
+        "https://assets2.lottiefiles.com/packages/lf20_e3n5v3i9.json",
+        "https://assets1.lottiefiles.com/packages/lf20_4kx2q32n.json",
+        "https://assets4.lottiefiles.com/private_files/lf30_jtkhztgp.json"
+      ] // solarized
+    ];
+    // Section Lotties for each theme (by section id)
+    const sectionLotties = {
+      intro: [
+        "https://assets4.lottiefiles.com/private_files/lf30_jtkhztgp.json",
+        "https://assets10.lottiefiles.com/packages/lf20_6q5ltazf.json",
+        "https://assets2.lottiefiles.com/packages/lf20_e3n5v3i9.json"
+      ],
+      collect: [
+        "https://assets1.lottiefiles.com/private_files/lf30_oz9xk4zw.json",
+        "https://assets8.lottiefiles.com/packages/lf20_tll0j4bb.json",
+        "https://assets1.lottiefiles.com/packages/lf20_4kx2q32n.json"
+      ],
+      use: [
+        "https://assets4.lottiefiles.com/packages/lf20_3rwasyjy.json",
+        "https://assets2.lottiefiles.com/packages/lf20_3rwasyjy.json",
+        "https://assets8.lottiefiles.com/packages/lf20_9wpyhdzo.json"
+      ],
+      security: [
+        "https://assets6.lottiefiles.com/packages/lf20_xlkxtmul.json",
+        "https://assets7.lottiefiles.com/packages/lf20_0g2v7j1c.json",
+        "https://assets4.lottiefiles.com/packages/lf20_jtkhztgp.json"
+      ],
+      sharing: [
+        "https://assets10.lottiefiles.com/private_files/lf30_6q5ltazf.json",
+        "https://assets7.lottiefiles.com/packages/lf20_0g2v7j1c.json",
+        "https://assets2.lottiefiles.com/packages/lf20_e3n5v3i9.json"
+      ],
+      rights: [
+        "https://assets7.lottiefiles.com/packages/lf20_0g2v7j1c.json",
+        "https://assets4.lottiefiles.com/private_files/lf30_jtkhztgp.json",
+        "https://assets6.lottiefiles.com/packages/lf20_xlkxtmul.json"
+      ],
+      cookies: [
+        "https://assets10.lottiefiles.com/packages/lf20_jv4zv9zw.json",
+        "https://assets1.lottiefiles.com/packages/lf20_g1rpo3zw.json",
+        "https://assets8.lottiefiles.com/packages/lf20_zp3oqzj6.json"
+      ],
+      contact: [
+        "https://assets4.lottiefiles.com/packages/lf20_1pxqjqps.json",
+        "https://assets10.lottiefiles.com/packages/lf20_6q5ltazf.json",
+        "https://assets7.lottiefiles.com/packages/lf20_0g2v7j1c.json"
+      ]
+    };
+    // Theme logic
+    const themes = ['theme-light','theme-dark','theme-solarized'];
+    let t = 0;
+    const themeBtn = document.getElementById("themeBtn");
+    const mainBody = document.getElementById("mainbody");
+    const mainGlass = document.getElementById("mainGlass");
+    const sidebarGlass = document.getElementById("sidebarGlass");
+    const footer = document.getElementById("footer");
+    const mascotPlayer = document.getElementById("mascotHeroAnim");
+    themeBtn.onclick = function() {
+      mainBody.classList.remove(...themes);
+      mainBody.classList.add(themes[t]);
+      mainGlass.classList.remove(...themes); mainGlass.classList.add(themes[t]);
+      sidebarGlass.classList.remove(...themes); sidebarGlass.classList.add(themes[t]);
+      themeBtn.classList.remove(...themes); themeBtn.classList.add(themes[t]);
+      footer.classList.remove('footer-dark','footer-solar');
+      if(themes[t]==='theme-dark') footer.classList.add('footer-dark');
+      if(themes[t]==='theme-solarized') footer.classList.add('footer-solar');
+      for(let i=1;i<=7;i++){
+        let d = document.getElementById("divider"+i);
+        if(d){d.classList.remove(...themes); d.classList.add(themes[t]);}
+      }
+      // Mascot randomizer for current theme
+      if(mascotPlayer && mascotPlayer.load){
+        const arr = mascotLotties[t];
+        const newSrc = arr[Math.floor(Math.random()*arr.length)];
+        mascotPlayer.load(newSrc);
+      }
+      // Section icon swaps
+      Object.keys(sectionLotties).forEach(section=>{
+        const idx = t;
+        const lottieId = section + "Lottie";
+        const icon = document.getElementById(lottieId);
+        if(icon && icon.load){
+          icon.load(sectionLotties[section][idx]);
+        }
+      });
+      // Next theme for next click
+      t = (t+1)%themes.length;
+    };
+    // Sidebar highlight/scroll and smooth scrolling
+    window.onscroll = function() {
+      const sections = ['intro','collect','use','security','sharing','rights','cookies','contact'];
+      let active = sections[0];
+      for (const id of sections) {
+        const el = document.getElementById(id);
+        if (el && el.getBoundingClientRect().top < 140) active = id;
+      }
+      document.querySelectorAll('.sidebar-link').forEach(link => {
+        link.classList.toggle('active', link.getAttribute('href').slice(1) === active);
+      });
+    };
+    document.querySelectorAll('.sidebar-link').forEach(link => {
+      link.onclick = function(e) {
+        e.preventDefault();
+        const id = this.getAttribute('href').slice(1);
+        const el = document.getElementById(id);
+        if (el) el.scrollIntoView({behavior:'smooth', block:'start'});
+      };
+    });
+  </script>
+</body>
+</html>
